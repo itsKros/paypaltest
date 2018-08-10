@@ -13,6 +13,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/datatables.min.css" rel="stylesheet">
+    <link href="assets/css/dataTables.bootstrap4.min.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
 
   </head>
