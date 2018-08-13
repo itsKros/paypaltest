@@ -1,0 +1,9 @@
+.card-body input {
+    border: none;
+    font-weight: 600;
+}
+
+#tbl td{cursor: pointer;}
+#tbl td:hover, .hasSelected {
+    background: rgba(0, 123, 255, 0.1);
+}
