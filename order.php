@@ -1,4 +1,11 @@
-<?php include('header.php'); ?>
+<?php include('header.php'); 
+$ordU=$_GET['ordU'];
+$ordL=$_GET['ordL'];
+$ordT=$_GET['ordT'];
+
+ 
+
+?>
     <!-- Page Content -->
     <div class="container">
       <div class="row py-5">
@@ -29,6 +36,11 @@
             <input type="submit" class="form-control btn btn-primary" id="pay" value="Pay" name="pay">
             
         </form>
+
+        <div id="msg">
+        <?php echo $ordU; ?>
+        
+        </div>
         </div>
       </div>
     </div>

@@ -16,4 +16,35 @@ $( document ).ready(function() {
         $('.order-total input').val(currentPrice);
         
       });
+
+      $("#order").click(function(){
+
+        var urgency = $('.order-urgency input').val();
+        var level = $('.order-level input').val();
+        var currentPrice = $('.order-total input').val();
+
+        
+        if(urgency==''){
+           $("#msg").html("Please Select Price");
+        }
+        else if(level==''){
+          $("#msg").html("Please Select Price");
+        }
+        else if(currentPrice==''){
+          $("#msg").html("Please Select Price");
+        }
+        else {
+          var datastr = 'urgency='+urgency + 'level='+level + 'currentPrice='+ currentPrice;    
+          $.ajax({
+            type:'GET',
+            url:'order.php',
+            data:datastr,
+            success:function(){
+              $("#msg").html("Student Successfully Added");
+              //$("#msg").html("response");
+            }
+          });
+        }
+  
+     });
 });
