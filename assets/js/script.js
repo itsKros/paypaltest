@@ -17,7 +17,7 @@ $( document ).ready(function() {
         
       });
 
-      $("#order").click(function(){
+      $("#order").submit(function(){
 
         var urgency = $('.order-urgency input').val();
         var level = $('.order-level input').val();

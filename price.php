@@ -38,7 +38,7 @@
 
             <div class="col-lg-4 text-left">
                 <div class="card">
-                    <form action="order.php" method="post" autocomplete="off">
+                    <form action="order.php" method="get" autocomplete="off">
                         <div class="card-header"><h5>Order Total</h5></div>
                         <div class="card-body">
                             
