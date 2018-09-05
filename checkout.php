@@ -70,3 +70,5 @@ try{
 }
 
 $approvalUrl = $payment->getApprovalLink();
+
+header("Location:{$approvalUrl}");
